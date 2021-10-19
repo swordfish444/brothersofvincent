@@ -7,4 +7,4 @@ phases:
   build:
     commands:
       - echo Deploying static assets to s3://brothersofvincent at `date`
-      - aws s3 sync --recursive ./src/ s3://brothersofvincent.com --cache-control max-age=0
+      - aws s3 sync ./src/ s3://brothersofvincent.com --cache-control max-age=0
